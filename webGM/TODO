@@ -1,0 +1,10 @@
+1- Faites une copie de ce dossier
+2- Dans ce nouveau dossier editez le fichier 0biName.txt et 0proName.txt 
+et entrez respectivement les nom des binomes et des projets séparés par un saut de ligne.
+!Il est important que le nom des binome soit donnée de tel maniére qu'il soit l'utilisateur d'une boite mail insa
+par exemple pierre.parent le mail de confirmation sera envoyé à pierre.parent@insa-rouen.fr
+3- Copiez votre nouveau dossier webGM sur votre serveur web et demandez à vos binomes d'y entrer leur choix.
+4- Une fois que chacun a rentré ses choix recupérez le dossier webGM et copiez le sur vos dossier local
+5- Finalement executer proGM [emplacement webGM]
+
+hav'fun.

@@ -1,0 +1,24 @@
+---Pour installer proGM tapez tout simplement:
+  
+  make install (en administrateur)
+
+  sudo make install (sur ubuntu.)
+
+---Vous pouvez alors executer le programme avec la commande
+ 
+  proGM
+
+---et obtenir de l'aide grace à la commande:
+
+  man proGM
+
+---Exemple simple d'utilisation:
+
+1- Faites une copie du dossier webGM
+2- Dans ce dossier editez le fichier 0biName.txt et 0proName.txt 
+et entrez respectivement les nom des binomes et des projets séparés par un saut de ligne.
+3- Copiez votre dossier webGM sur votre serveur web et demandez à vos binomes d'y entrer leur choix.
+4- Une fois que chacun a rentré ses choix recupérez les dossier webGM et copiez le sur vos dossier local
+5- Finalement executer proGM [emplacement webGM] dans un terminal
+
+hav'fun.

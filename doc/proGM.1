@@ -1,0 +1,45 @@
+.TH proGM
+.SH NOM
+proGM gestionnaire d'affection des projets Gm
+.SH SYNOPSYS
+proGM [dossier de donnees][options]
+.SH DESCRIPTION
+ proGm est un logiciel libre qui permet de gerer efficacement le probleme d'affectation d'un projets a un binome, chaque binome ayant specifie une liste de preferences.  Il est livre avec une interface web (webGM) afin de premettre facilement a chaque binome d'effectuer ses choix sur internet.
+ 
+Afin de fonctionner il faut indiquer au programme le dossier dans lequel se situe les donnees. Ces donnees doivent se  trouver si nessecaire dans les fichiers speciaux suivants:
+.TP   
+    0biName.txt pour le nom des binomes
+.TP 
+    0proName.txt pour le nom des projets
+.TP   
+    matrix.txt pour la matrice de coup (avec l'option -m)
+.TP
+Par defaut,chaque binome doit specifier un ordre de choix pour ses projets dans le fichier se nomant de même que son nom de binome et portant l'extenssion txt. (par exemple houssin-parent.txt pour le binome houssin-parent).Chaque binome ecrit donc dans ce fichier les noms de projet separe par des saut de ligne dans l'ordre qu'il veux.
+.TP
+Il est aussi possible que chaque binome ajoute (au fichier de la liste de projet) un numero de choix deriere chaque nom de projet afin de specifier ses preferences.Il faut alors utiliser l'option -a
+(! Dans ce cas le programe ne fait pas attentions au nom de projet mais lis simplement les numeros de choix specifie. Les noms de projet doivent donc être dans le même ordre que dans le fichier 0proName.txt)
+.TP
+Afin d'effectuer la saisie de l'ordre de preference de chacun de maniére automatique sur internet utiliser le dossier webGM ou webGM+mail (pour confirmation par mail) fournis avec ce programme. (Pour des details sur l'utilisation de l'interface web voir le fichier TODO dans ces dossiers)
+.SS Options
+.TP
+-b 
+Ne lis PAS les noms de binomes dans 0biName.txt mais numerote les binomes.
+.TP
+-p 
+Ne lis PAS les noms des projets dans 0proName.txt mais numerote les projet.
+.TP
+-m
+Utilisation du fichier matrix.txt a la place des fichier pour chaque binome pour specifier la matrice de coup.
+.TP
+-n 
+Force la demande du nombre de binomes et de projets a gerer.
+.TP
+-d 
+Affiche des details au court de la procession.
+.TP
+-f
+Cette option doit etre suivie d'un nom de binome. Elle permet de donner son premier choix a un binome.
+.TP
+-a 
+chaque binome inscrit un numero de choix deriere chaque nom de projet.
+
